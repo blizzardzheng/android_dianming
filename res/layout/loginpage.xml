@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/default_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="30sp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dp"
+            android:layout_marginRight="15.0dp"
+            android:layout_marginTop="15.0dp"
+            android:paddingBottom="5dp" >
+
+            <EditText
+                android:id="@+id/login_edit_account"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:hint="@string/accInputLabel"
+                android:paddingTop="10dp"
+                android:saveEnabled="true"
+                android:textColor="@color/white" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/login_edit_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/login_edit_account"
+                android:layout_alignRight="@id/login_edit_account"
+                android:layout_below="@id/login_edit_account"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginTop="10dp"
+                android:hint="@string/strPswInputLabel"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:saveEnabled="true"
+                android:textColor="@color/white" >
+            </EditText>
+        </RelativeLayout>
+    </LinearLayout>
+
+   
+	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/reg_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/help_view"
+           	android:textColor="@color/white"
+            android:text="注  册" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/css_a"
+           	android:textColor="@color/white"
+            android:text="登   录" />
+    </LinearLayout>
+
+</LinearLayout>

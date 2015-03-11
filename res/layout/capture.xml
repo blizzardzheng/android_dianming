@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center" />
+
+    <com.example.tiaoxingdemo.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/android:transparent" />
+
+    <Button
+        android:id="@+id/manual_input"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="  确 定  " />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/cancel_input"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="  取 消  " />
+
+</FrameLayout>
